@@ -16,7 +16,7 @@ async function sendData(e){
     }
 
     try{
-        await axios.post("http://127.0.0.1:3000/submit", 
+        await axios.post("/api/submit", 
             clientData, {
             headers:{
                 "Content-Type": "application/json"

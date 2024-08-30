@@ -1,13 +1,14 @@
-const http = require("http");
+
 const axios=require("axios");
 require('dotenv').config();
-const PORT = 3000;
 
 const TOKEN=process.env.TOKEN;
 const chatId=process.env.chatId;
 const TG_BOT_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-const server = http.createServer(async (request, response) => {
+
+
+module.exports=async (request, response)=>{
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Allow-Methods', 'OPTIONS, POST, GET, PUT, DELETE');
     response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -18,7 +19,7 @@ const server = http.createServer(async (request, response) => {
         response.end();
         return;
     }
-    if (request.url === "/submit" && request.method === "POST") {
+    if (request.url === "/api/submit" && request.method === "POST") {
         let message = '';
 
         request.on("data", chunk => {
@@ -52,8 +53,4 @@ const server = http.createServer(async (request, response) => {
         response.statusCode = 404;
         response.end();
     }
-});
-
-server.listen(PORT, (error) => {
-   error? console.error(error) :  console.log(`Server launched on Port: ${PORT}`);
-});
+}
