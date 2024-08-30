@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Ruda";
+    src: url(../fonts/Ruda/Ruda-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Overpass";
+    src: url(../fonts/Overpass/Overpass-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body{
+    background-color: #E5F9FD;
+    font-family: "Ruda";
+    color: #01010D;
+}
+
+main{
+    width: 89.31%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+.main_content_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.content_services_item{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    align-items: center;
+    border: 2px solid #01010D;
+    border-radius: 1.125rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+.content_services_item svg{
+    font-size: 1.5rem;
+}
+.content_services_item p{
+    font-size: 0.75rem;
+    letter-spacing: -0.5%;
+}
+
+.characteristics_section{
+    width: 89.31%;
+    margin: 0 auto;
+    color: #E5F9FD;  
+    margin-bottom: 2.5rem; 
+}
+h1{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    letter-spacing: -0.5%;
+    color: #01010D;
+}
+.main_characteristics_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.75rem, 1fr));
+    column-gap: 3.813rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(161.261deg, #0077B6 0%, rgba(0, 180, 216, 90%) 100%);
+    box-shadow: 0px 2px 8px 0px rgba(35, 35, 35, 25%);
+}
+.main_characteristics_container ul{
+    list-style: none;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+.main_characteristics_container ul li{
+    margin-bottom: 0.5rem;
+}
+h2{
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+.form_section{
+    width: 89.31%;
+    margin: 0 auto;
+}
+h3{
+    font-family: "Overpass";
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #01010D;
+    letter-spacing: -2%;
+    margin-bottom: 0.5rem;
+}
+.price_quantity_section{
+    display: flex;
+    justify-content: space-between;
+}
+.price_section{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.promotional_price{
+    font-family: "Overpass";
+    font-size: 2.25rem;
+    color: #CF3225;
+    letter-spacing: -2%;
+    font-weight: 600;
+}
+.old_price{
+    color: #000000;
+    font-size: 1rem;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    background: #00B4D8;
+    border-radius: 6.25rem;
+    padding: 0.25rem;
+}
+.counter button{
+    border: none;
+    background: #E5F9FD;
+    font-size: 1.5rem;
+    display: grid;
+    place-self: center;
+    border-radius: 6.25rem;
+    color: #01010D;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+#counter-value{
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.5%;
+    color: #01010D;
+    margin: 0 0.75rem 0 0.75rem;
+}
+form{
+    margin-top: 2.5rem;
+}
+form input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #01010D;
+    background: none;
+    font-size: 1rem;
+    font-family: "Ruda";
+    color: #01010D;
+}
+form label{
+    font-size: 0.75rem;
+    color: #01010D;
+    margin-left: 1rem;
+}
+.submit_form_button{
+    width: 100%;
+    height: 4.375rem;
+    display: grid;
+    place-items: center;
+
+    background-color: #00B4D8;
+    color: #01010D;
+    font-size: 1.25rem;
+    font-family: "Ruda";
+    font-weight: 600;
+    letter-spacing: -0.5%;
+    border-radius: 1.5rem;
+    box-shadow: 0px 2px 8px 0px rgba(35, 35, 35, 25%);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
