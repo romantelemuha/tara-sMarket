@@ -4,8 +4,9 @@
   "description": "",
   "main": "client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build step required for static HTML'",
+    "deploy": "vercel --prod"
   },
   "keywords": [],
   "author": "",
