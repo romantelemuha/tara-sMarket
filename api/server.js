@@ -19,7 +19,7 @@ module.exports=async (request, response)=>{
         response.end();
         return;
     }
-    if (request.url === "/api/submit" && request.method === "POST") {
+    if (request.url === "/api/server" && request.method === "POST") {
         let message = '';
 
         request.on("data", chunk => {
